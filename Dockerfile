@@ -1,5 +1,5 @@
 # Usa uma imagem oficial do Python como base
-FROM python:3.12-alpine
+FROM python:3.13-alpine
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
@@ -10,5 +10,3 @@ COPY . .
 # Instala as dependências (se houver)
 RUN pip install --no-cache-dir -r requirements.txt || true
 
-# Comando para rodar o script principal
-CMD ["python", "src/main.py"]
