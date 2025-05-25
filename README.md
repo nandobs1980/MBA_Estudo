@@ -9,6 +9,7 @@ meu_projeto_python/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── Dockerfile
 ├── src/
 │   └── main.py
 ├── tests/
@@ -18,14 +19,15 @@ meu_projeto_python/
 
 ## Como executar
 
+### Executando localmente
+
 1. Clone o repositório:
    ```
-   --git clone https://github.com/seu-usuario/meu_projeto_python.git
    git clone https://github.com/nandobs1980/MBA_Estudo
    ```
 2. Acesse a pasta do projeto:
    ```
-   cd MBA_ESTUDO
+   cd MBA_Estudo
    ```
 3. (Opcional) Instale as dependências:
    ```
@@ -34,6 +36,17 @@ meu_projeto_python/
 4. Execute o script principal:
    ```
    python src/main.py
+   ```
+
+### Executando com Docker
+
+1. Construa a imagem Docker:
+   ```
+   docker build -t mba_estudo .
+   ```
+2. Execute o container:
+   ```
+   docker run --rm mba_estudo
    ```
 
 ## Sobre
